@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './App.css';
-import testVideo from './assets/test_video.mp4';
+import testVideo from './assets/test2_video.mp4';
 
 export default function App() {
   const [showVideo, setShowVideo] = useState(false);
