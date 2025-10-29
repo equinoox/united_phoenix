@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/united_phoenix/static/css/main.4653310c.css",
+    "main.js": "/united_phoenix/static/js/main.3dc4fa3d.js",
+    "static/js/453.5924176d.chunk.js": "/united_phoenix/static/js/453.5924176d.chunk.js",
+    "index.html": "/united_phoenix/index.html",
+    "main.4653310c.css.map": "/united_phoenix/static/css/main.4653310c.css.map",
+    "main.3dc4fa3d.js.map": "/united_phoenix/static/js/main.3dc4fa3d.js.map",
+    "453.5924176d.chunk.js.map": "/united_phoenix/static/js/453.5924176d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4653310c.css",
+    "static/js/main.3dc4fa3d.js"
+  ]
+}
