@@ -15,7 +15,7 @@ export default function App() {
   };
 
   const handleSchedule = () => {
-    alert('Ovde možete dodati funkcionalnost za zakazivanje termina');
+    window.location.href = 'https://calendly.com/united-phx/college-mentor';
   };
 
   return (
@@ -30,7 +30,6 @@ export default function App() {
         <div className="video-container">
           <video 
             className="video"
-            controls
             autoPlay
             onEnded={handleVideoEnd}
           >
@@ -42,7 +41,7 @@ export default function App() {
             <div className="overlay-container">
               <div className="video-overlay"></div>
               <button className="schedule-button" onClick={handleSchedule}>
-                <span className="button-text">Zakaži termin</span>
+                <span className="button-text">ZAKAŽI TERMIN</span>
               </button>
             </div>
           )}
