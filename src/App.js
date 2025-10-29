@@ -1,25 +1,52 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
 
-function App() {
+export default function App() {
+  const [showVideo, setShowVideo] = useState(false);
+  const [showButton, setShowButton] = useState(false);
+
+  const handleTitleClick = () => {
+    setShowVideo(true);
+  };
+
+  const handleVideoEnd = () => {
+    setShowButton(true);
+  };
+
+  const handleSchedule = () => {
+    alert('Ovde možete dodati funkcionalnost za zakazivanje termina');
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      {!showVideo ? (
+        <div className="title-wrapper">
+          <h1 className="title" onClick={handleTitleClick}>
+            WHY NOT?
+          </h1>
+        </div>
+      ) : (
+        <div className="video-container">
+          <video 
+            className="video"
+            controls
+            autoPlay
+            onEnded={handleVideoEnd}
+          >
+            <source src="/test_video.mp4" type="video/mp4" />
+            Vaš pretraživač ne podržava video tagove.
+          </video>
+          
+          {showButton && (
+            <div className="overlay-container">
+              <div className="video-overlay"></div>
+              <button className="schedule-button" onClick={handleSchedule}>
+                <span className="button-text">Zakaži termin</span>
+              </button>
+            </div>
+          )}
+        </div>
+      )}
     </div>
   );
 }
-
-export default App;
