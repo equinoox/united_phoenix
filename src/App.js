@@ -30,6 +30,7 @@ export default function App() {
         <div className="video-container">
           <video 
             className="video"
+            playsInline
             autoPlay
             onEnded={handleVideoEnd}
           >
