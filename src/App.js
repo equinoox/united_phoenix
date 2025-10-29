@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './App.css';
+import testVideo from './assets/test_video.mp4';
 
 export default function App() {
   const [showVideo, setShowVideo] = useState(false);
@@ -33,7 +34,7 @@ export default function App() {
             autoPlay
             onEnded={handleVideoEnd}
           >
-            <source src="/test_video.mp4" type="video/mp4" />
+            <source src={testVideo} type="video/mp4" />
             Vaš pretraživač ne podržava video tagove.
           </video>
           
