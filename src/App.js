@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './App.css';
 import testVideo from './assets/test2_video.mp4';
 
@@ -17,6 +17,20 @@ export default function App() {
   const handleSchedule = () => {
     window.location.href = 'https://calendly.com/united-phx/college-mentor';
   };
+
+  // Blokira skrolovanje kada se video prikaže
+  useEffect(() => {
+    if (showVideo) {
+      document.body.classList.add('no-scroll');
+    } else {
+      document.body.classList.remove('no-scroll');
+    }
+
+    // Cleanup kada se komponenta unmountuje
+    return () => {
+      document.body.classList.remove('no-scroll');
+    };
+  }, [showVideo]);
 
   return (
     <div className="container">
@@ -37,6 +51,9 @@ export default function App() {
             <source src={testVideo} type="video/mp4" />
             Vaš pretraživač ne podržava video tagove.
           </video>
+          
+          
+          <div className="video-blocker"></div>
           
           {showButton && (
             <div className="overlay-container">
