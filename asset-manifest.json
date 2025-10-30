@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/united_phoenix/static/css/main.8fe30481.css",
+    "main.css": "/united_phoenix/static/css/main.1a80156f.css",
     "main.js": "/united_phoenix/static/js/main.40e9d794.js",
     "static/js/453.5924176d.chunk.js": "/united_phoenix/static/js/453.5924176d.chunk.js",
     "static/media/test2_video.mp4": "/united_phoenix/static/media/test2_video.84bbbaff5c9161c45026.mp4",
     "index.html": "/united_phoenix/index.html",
-    "main.8fe30481.css.map": "/united_phoenix/static/css/main.8fe30481.css.map",
+    "main.1a80156f.css.map": "/united_phoenix/static/css/main.1a80156f.css.map",
     "main.40e9d794.js.map": "/united_phoenix/static/js/main.40e9d794.js.map",
     "453.5924176d.chunk.js.map": "/united_phoenix/static/js/453.5924176d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8fe30481.css",
+    "static/css/main.1a80156f.css",
     "static/js/main.40e9d794.js"
   ]
 }
