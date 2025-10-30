@@ -52,6 +52,7 @@ body.no-scroll {
 .video-container {
   width: 100vw;
   height: 100vh;
+  height: 100dvh; /* Dynamic viewport height - bolje za mobilne */
   position: fixed;
   top: 0;
   left: 0;
@@ -61,12 +62,14 @@ body.no-scroll {
   justify-content: center;
   padding: 0;
   background: #000;
+  overflow: hidden;
 }
 
 .video {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  object-position: center;
   border-radius: 0;
   transition: all 0.5s ease;
   pointer-events: none;
@@ -242,6 +245,17 @@ body.no-scroll {
   
   .button-text {
     font-size: 1.8rem;
+  }
+
+  .video-container {
+    height: 100vh;
+    height: 100svh;
+  }
+  
+  .video {
+    max-width: 100vw;
+    max-height: 100vh;
+    max-height: 100svh;
   }
 
 }
