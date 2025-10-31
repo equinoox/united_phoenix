@@ -75,6 +75,11 @@ body.no-scroll {
   pointer-events: none;
 }
 
+video::-webkit-media-controls,
+video::-webkit-media-controls-enclosure {
+  display: none !important;
+}
+
 .video-blocker {
   position: absolute;
   top: 0;

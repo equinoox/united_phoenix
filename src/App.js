@@ -45,6 +45,8 @@ export default function App() {
           <video 
             className="video"
             playsInline
+            webkit-playsinline="true"
+            x5-playsinline="true"          
             autoPlay
             onEnded={handleVideoEnd}
           >
